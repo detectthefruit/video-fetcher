@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f3ed">
+    <title>Video Fetcher</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="/" aria-label="Video Fetcher home"><span class="wordmark-mark" aria-hidden="true">V</span> FIELDNOTES <span class="wordmark-divider">/</span> VIDEO FETCHER</a>
+      <span class="local-status"><span class="status-dot"></span> LOCAL SESSION</span>
+    </header>
+
+    <main>
+      <section class="workspace" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow"><span>01</span> MEDIA RETRIEVAL TOOL</p>
+          <h1 id="page-title">Bring the video<br>closer.</h1>
+          <p class="lede">Fetch direct video links through your local proxy, or preview a YouTube video here.</p>
+        </div>
+
+        <form id="download-form" class="fetch-form" novalidate>
+          <label for="video-url">SOURCE URL</label>
+          <div class="input-row">
+            <input id="video-url" name="url" type="url" placeholder="https://example.com/video.mp4" autocomplete="url" spellcheck="false" required>
+            <button id="fetch-button" type="submit"><span class="button-icon" aria-hidden="true">↓</span><span>Fetch video</span></button>
+          </div>
+          <p class="input-hint">Direct video links download. YouTube links open an embedded preview.</p>
+          <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+          <div id="youtube-preview" class="youtube-preview" hidden>
+            <iframe title="YouTube video preview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>YouTube playback only. Use YouTube’s official download options where available.</p>
+          </div>
+        </form>
+
+        <div class="privacy-note">
+          <span class="lock-icon" aria-hidden="true">⌑</span>
+          <p><strong>Private by design.</strong> Requests run through this local server. Links are not stored or logged.</p>
+        </div>
+      </section>
+
+      <aside class="side-index" aria-label="Tool details">
+        <div class="side-index-top"><span>VF—01</span><span>READY</span></div>
+        <div class="signal" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <p class="side-caption">INCOMING<br>STREAM</p>
+        <div class="side-rule"></div>
+        <p class="side-meta">A SIMPLE WAY TO<br>KEEP WHAT YOU FIND.</p>
+      </aside>
+    </main>
+
+    <footer class="footer"><span>VIDEO FETCHER <span class="footer-mark">©</span> 2026</span><span>BUILT FOR YOUR BROWSER</span></footer>
+  </body>
+</html>
